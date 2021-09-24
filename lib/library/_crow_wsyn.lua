@@ -75,7 +75,7 @@ local crow_wsyn = function(self, x, y)
   local note = "C"
 
   if self:glyph_at(self.x + 2, self.y) == "." then
-    note = "C"
+    return
   else
     note = self:glyph_at(self.x + 2, self.y)
   end
